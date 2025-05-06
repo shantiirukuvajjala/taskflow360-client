@@ -1,46 +1,88 @@
-# Getting Started with Create React App
+# TaskFlow360 – React Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the React + TypeScript frontend for **TaskFlow360**, a full-stack task management application built to demonstrate clean architecture, modular UI design, and integration with a .NET 8 Web API backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 📋 Add, delete, and mark tasks as completed
+- 🔄 Persist tasks using Axios + RESTful API
+- 🧩 Reusable components: `TaskForm`, `TaskCard`, `TaskDashboard`
+- 🎯 Clean functional component design using hooks
+- 🎨 Responsive UI with inline styles and semantic layout
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+| Layer     | Tech Used                   |
+|-----------|-----------------------------|
+| Frontend  | React, TypeScript           |
+| API Calls | Axios                       |
+| Styling   | CSS-in-JS (inline styles)   |
+| Backend   | .NET 8 Web API (in separate repo) |
+| Tools     | VS Code, Git, GitHub        |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+src/
+│
+├── components/
+│ ├── TaskForm.tsx # Controlled form for new task
+│ └── TaskCard.tsx # Individual task item card
+│
+├── models/
+│ └── Tasks.ts # Task interface
+│
+├── pages/
+│ └── TaskDashboard.tsx # Main container with state and logic
+│
+├── services/
+│ └── taskService.ts # Axios calls to backend API
+│
+└── App.tsx # Root component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ▶️ Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (v18+ recommended)
+- npm (v9+)
+- Backend API running locally at `http://localhost:5034`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Setup
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Clone the repo
+git clone https://github.com/<your-username>/taskflow360-client.git
+cd taskflow360-client
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start the development server
+npm start
+Open your browser at http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+API Base URL
+Make sure the following backend is running:
+
+API: .NET backend repo
+
+Base URL used in frontend: http://localhost:5034/api/tasks
+
+
+### Author Notes
+This project was created as part of my personal portfolio to upskill in:
+
+React (I transitioned from Angular)
+
+TypeScript-based component architecture
+
+Full-stack development with clean design practices
+
