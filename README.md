@@ -59,7 +59,7 @@ src/
 ### Setup
 
 # Clone the repo
-git clone https://github.com/<your-username>/taskflow360-client.git
+git clone https://github.com/shantiirukuvajjala/taskflow360-client.git
 cd taskflow360-client
 
 # Install dependencies
